@@ -7,23 +7,23 @@ updateView();
 
 function updateView() {
   document.getElementById("app").innerHTML = /*html*/ `
-     <div class = "header"></div>
-     <div class = "dynamiskBenji"></div>
-     <div class = "tracker">
-     <div id = "progressbar1">innerhtml<div>
-     <div id = "progressbar2">innerhtml<div>
-     <div id = "progressbar3">innerhtml<div>
-     <button id = "btn1" onclick="Eat">Snacks</button>
-     <button id = "btn2" onclick="Guitar">Spille Gitar</button>
-     <button id = "btn3" onclick="Sleep">Sove</button>
-     </div>
-     `;
+    <div class = "header">Benjigotchi</div>
+    <div class = "dynamiskBenji">bildet av benji</div>
+      <div class = "tracker">
+        <div id = "progressbar1"><div>
+        <div id = "progressbar2"><div>
+        <div id = "progressbar3"><div>
+      </div>
+    <button id = "btn1" onclick="Eat">Snacks</button>
+    <button id = "btn2" onclick="Guitar">Spille Gitar</button>
+    <button id = "btn3" onclick="Sleep">Sove</button>
+    `;
 }
 
 // ----- CONTROLLER -----
 
 //progressbar1
-function update() {
+function update(){
   var element = document.getElementById("progressbar1");
   var width = 100;
   var identity = setInterval(scene, 100);
@@ -38,4 +38,8 @@ function update() {
     }
   }
   updateView();
+}
+
+function eat(){
+update();
 }
