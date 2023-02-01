@@ -40,7 +40,7 @@ function updateProgressbar1() { //trekker fra 1 tall per 1,5 sekund fra progress
 //funksjonen til btn1 "popkorn"
 function eat(){ //legger til 10% når man trykker på "popkorn"
   if (progressbar1 < 90) { //gjør så man ikke kan gå over 100% ved å klikke.
-    progressbar1 = progressbar1 + 10; //leger til 10%
+    progressbar1 = progressbar1 + 10; //legger til 10%
   } else { //vis ikke
     progressbar1 = 100; //setter grense/cap på 100%
   }
