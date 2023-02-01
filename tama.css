@@ -4,7 +4,7 @@ body{
 }
 
 #progressbar1 {
-  width: 100%;
+  width: 300px;
   height: 35px;
   background-color: #4caf50;
   text-align: center;
