@@ -4,11 +4,7 @@ const app = document.getElementById("app");
 // view
 updateView();
 function updateView() {
-  document.getElementById("app").innerHTML = /*html*/ `
-     <div class = "header"></div>
-     <div class = "dynamiskBenji"></div>
-     <div class = "tracker">
-     <div id = "progressbar1"><div>
+  document.getElementById("app").innerHTML<div>
      <button id = "btn1"></button>
      <button id = "btn2"></button>
      <button id = "btn3"></button>
@@ -19,10 +15,7 @@ function updateView() {
 // controller
 
 function update() {
-  var element = document.getElementById("progressbar1");
-  var width = 100;
-  var identity = setInterval(scene, 100);
-
+  va
   function scene() {
     if (width < 1) {
       clearInterval(identity);
