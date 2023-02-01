@@ -2,16 +2,20 @@
 
 // view
 const app = document.getElementById("app");
+
 updateView();
+
 function updateView() {
   document.getElementById("app").innerHTML = /*html*/ `
      <div class = "header"></div>
      <div class = "dynamiskBenji"></div>
      <div class = "tracker">
-     <div id = "progressbar1"><div>
-     <button id = "btn1"></button>
-     <button id = "btn2"></button>
-     <button id = "btn3"></button>
+     <div id = "progressbar1">innerhtml<div>
+     <div id = "progressbar2">innerhtml<div>
+     <div id = "progressbar3">innerhtml<div>
+     <button id = "btn1">Snacks</button>
+     <button id = "btn2">Spille Gitar</button>
+     <button id = "btn3">Sove</button>
      </div>
      `;
 }
