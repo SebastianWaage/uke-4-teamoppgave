@@ -2,6 +2,7 @@
 const app = document.getElementById("app");
 
 // view
+updateView();
 function updateView() {
   document.getElementById("app").innerHTML = /*html*/ `
      <div class = "header"></div>
@@ -11,7 +12,8 @@ function updateView() {
      <button id = "btn1"></button>
      <button id = "btn2"></button>
      <button id = "btn3"></button>
-     </div>`;
+     </div>
+     `;
 }
 
 // controller
@@ -31,4 +33,3 @@ function update() {
     }
   }
 }
-update();
