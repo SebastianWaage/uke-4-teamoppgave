@@ -1,0 +1,8 @@
+#progressbar1 {
+  width: 100%;
+  height: 35px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 32px;
+  color: black;
+}
