@@ -53,3 +53,48 @@ button {
 
 #btn3 {
 }
+
+#app{
+  width: 600px;
+  height: 800px;
+  border-radius: 400px;
+  border: solid black 5px;
+  display: grid;
+  grid-template-rows: 150px 1fr 1fr;
+  justify-content: center;
+}
+
+#header{
+  font-size: larger;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+#dynamiskBenji{
+  border: solid black 2px;
+  width: 300px;
+  border-radius: 10px;
+  
+}
+
+#tracker{
+  display: grid;
+  grid-template-columns: 320px 75px;
+  grid-template-rows: 50px 50px 50px;
+}
+
+.progBar{
+  border: solid black 5px;
+  border-radius: 100px;
+}
+
+#progressbar1{
+
+}
+
+#progressbar2{
+  
+}
+#progressbar3{
+  
+}

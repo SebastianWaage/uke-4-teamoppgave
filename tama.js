@@ -13,19 +13,19 @@ updateProgressbar3();
 
 function updateView() {
   document.getElementById("app").innerHTML = /*html*/ `
-    <div class = "header">Benjigotchi</div>
-    <div class = "dynamiskBenji">bildet av benji</div>
-      <div class = "tracker">
-      <div id="progressbar1" style="width:${
+    <div id = "header">Benjigotchi</div>
+    <div id = "dynamiskBenji">bildet av benji</div>
+      <div id = "tracker">
+      <div class = "progBar" id="progressbar1" style="width:${
         (progressbar1 / 100) * 300
       }px">${progressbar1}%</div>
       <!-- capper størelse på progressbaren med (style="width:${
         (progressbar1 / 100) * 300
       }px") til 300px. -->
-      <div id = "progressbar2" style = "width:${
+      <div class = "progBar"  id = "progressbar2" style = "width:${
         (progressbar2 / 100) * 300
       }px">${progressbar2}%<div>
-      <div id = "progressbar3" style="width:${
+      <div class = "progBar"  id = "progressbar3" style="width:${
         (progressbar3 / 100) * 300
       }px">${progressbar3}%<div>
       </div>
