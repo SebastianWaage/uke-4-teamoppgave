@@ -48,16 +48,29 @@ button {
 #btn1 {
   grid-row: 1;
   grid-column: 2;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 2px;
+  background-color: #2aa198;
+  
 }
 
 #btn2 {
   grid-row: 2;
   grid-column: 2;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 2px;
+  background-color: #b58900;
 }
 
 #btn3 {
   grid-row: 3;
   grid-column: 2;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 2px;
+  background-color: #dc322f;
 }
 
 #app{
@@ -74,12 +87,15 @@ button {
   font-size: larger;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
+  height: 40px;
+  margin-top: 50px;
 }
 
 #dynamiskBenji{
   border: solid black 2px;
   width: 300px;
   border-radius: 10px;
+  margin: 20px;
   
 }
 
@@ -106,4 +122,16 @@ button {
 #progressbar3{
   grid-row: 3;
   grid-column: 1;
+}
+
+#btn1:hover {
+  background-color: #1c726b;
+}
+
+#btn2:hover {
+  background-color: #836201;
+}
+
+#btn3:hover {
+  background-color: #a32422;
 }
