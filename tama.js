@@ -28,7 +28,7 @@ function updateView() {
       <div class = "progBar"  id = "progressbar3" style="width:${
         (progressbar3 / 100) * 300
       }px">${progressbar3}%</div>
-      <button id = "btn1" onclick = "eat()">Popkorn</button>
+      <button id = "btn1" onclick = "eat()"></button>
       <button id = "btn2" onclick = "guitar()">Spille Gitar</button>
       <button id = "btn3" onclick = "sleep()">Sove</button>
     </div>

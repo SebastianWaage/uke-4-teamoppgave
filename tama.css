@@ -52,7 +52,9 @@ button {
   border-radius: 20px;
   margin-top: 2px;
   background-color: #2aa198;
-  
+  background-image: url(assets/popcornNonHover.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 #btn2 {
@@ -126,6 +128,8 @@ button {
 
 #btn1:hover {
   background-color: #1c726b;
+  background-image: url("assets/popcornHover.png");
+  background-repeat: no-repeat;
 }
 
 #btn2:hover {
