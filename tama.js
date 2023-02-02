@@ -15,7 +15,7 @@ function updateView() {
   document.getElementById("app").innerHTML = /*html*/ `
     <div id = "header">Benjigotchi</div>
     <div id = "dynamiskBenji">bildet av benji</div>
-      <div id = "tracker">
+    <div id = "tracker">
       <div class = "progBar" id="progressbar1" style="width:${
         (progressbar1 / 100) * 300
       }px">${progressbar1}%</div>
@@ -24,14 +24,14 @@ function updateView() {
       }px") til 300px. -->
       <div class = "progBar"  id = "progressbar2" style = "width:${
         (progressbar2 / 100) * 300
-      }px">${progressbar2}%<div>
+      }px">${progressbar2}%</div>
       <div class = "progBar"  id = "progressbar3" style="width:${
         (progressbar3 / 100) * 300
-      }px">${progressbar3}%<div>
-      </div>
-    <button id = "btn1" onclick = "eat()">Popkorn</button>
-    <button id = "btn2" onclick = "guitar()">Spille Gitar</button>
-    <button id = "btn3" onclick = "sleep()">Sove</button>
+      }px">${progressbar3}%</div>
+      <button id = "btn1" onclick = "eat()">Popkorn</button>
+      <button id = "btn2" onclick = "guitar()">Spille Gitar</button>
+      <button id = "btn3" onclick = "sleep()">Sove</button>
+    </div>
     `;
 }
 

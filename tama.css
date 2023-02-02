@@ -46,12 +46,18 @@ button {
 }
 
 #btn1 {
+  grid-row: 1;
+  grid-column: 2;
 }
 
 #btn2 {
+  grid-row: 2;
+  grid-column: 2;
 }
 
 #btn3 {
+  grid-row: 3;
+  grid-column: 2;
 }
 
 #app{
@@ -89,12 +95,15 @@ button {
 }
 
 #progressbar1{
-
+  grid-row: 1;
+  grid-column: 1;
 }
 
 #progressbar2{
-  
+  grid-row: 2;
+  grid-column: 1;
 }
 #progressbar3{
-  
+  grid-row: 3;
+  grid-column: 1;
 }
