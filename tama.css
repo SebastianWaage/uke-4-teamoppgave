@@ -64,6 +64,9 @@ button {
   border-radius: 20px;
   margin-top: 2px;
   background-color: #b58900;
+  background-image: url(assets/guitarNonHover.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 #btn3 {
@@ -73,6 +76,9 @@ button {
   border-radius: 20px;
   margin-top: 2px;
   background-color: #dc322f;
+  background-image: url(assets/sleepNonHover.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 #app{
@@ -134,8 +140,12 @@ button {
 
 #btn2:hover {
   background-color: #836201;
+  background-image: url("assets/guitarHover.png");
+  background-repeat: no-repeat;
 }
 
 #btn3:hover {
   background-color: #a32422;
+  background-image: url("assets/sleepHover.png");
+  background-repeat: no-repeat;
 }

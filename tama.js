@@ -29,8 +29,8 @@ function updateView() {
         (progressbar3 / 100) * 300
       }px">${progressbar3}%</div>
       <button id = "btn1" onclick = "eat()"></button>
-      <button id = "btn2" onclick = "guitar()">Spille Gitar</button>
-      <button id = "btn3" onclick = "sleep()">Sove</button>
+      <button id = "btn2" onclick = "guitar()"></button>
+      <button id = "btn3" onclick = "sleep()"></button>
     </div>
     `;
 }
