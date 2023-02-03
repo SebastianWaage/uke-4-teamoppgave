@@ -16,22 +16,28 @@ function updateView() {
     <div id = "header">Benjigotchi</div>
     <div id = "dynamiskBenji">bildet av benji</div>
     <div id = "tracker">
-      <div class = "progBar" id="progressbar1" style="width:${
-        (progressbar1 / 100) * 300
-      }px">${progressbar1}%</div>
+    <div id = "prg1">
+    <div class = "progBar" id="progressbar1" style="width:${
+      (progressbar1 / 100) * 300
+    }px">${progressbar1}%</div>
+    </div>
       <!-- capper størelse på progressbaren med (style="width:${
         (progressbar1 / 100) * 300
       }px") til 300px. -->
+      <div id = "prg2">
       <div class = "progBar"  id = "progressbar2" style = "width:${
         (progressbar2 / 100) * 300
       }px">${progressbar2}%</div>
+      </div>
+      <div id = "prg3">
       <div class = "progBar"  id = "progressbar3" style="width:${
         (progressbar3 / 100) * 300
       }px">${progressbar3}%</div>
+      </div>
       <button id = "btn1" onclick = "eat()"></button>
       <button id = "btn2" onclick = "guitar()"></button>
       <button id = "btn3" onclick = "sleep()"></button>
-    </div>
+    </div>  
     `;
 }
 
@@ -83,6 +89,7 @@ function guitar() {
   } else {
     progressbar2 = 100;
   }
+  updateView();
 }
 
 function sleep() {
@@ -91,4 +98,5 @@ function sleep() {
   } else {
     progressbar3 = 100;
   }
+  updateView();
 }
