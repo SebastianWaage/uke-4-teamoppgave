@@ -16,7 +16,13 @@ function updateView() {
     <div id = "header">Benjigotchi</div>
     <div id = "dynamiskBenji">bildet av benji</div>
     <div id = "tracker">
-    <div id = "prg1">
+    </div>  
+    `;
+}
+
+function updateBars(){
+  document.getElementById("tracker").innerHTML=`
+  <div id = "prg1">
     <div class = "progBar" id="progressbar1" style="width:${
       (progressbar1 / 100) * 300
     }px">${progressbar1}%</div>
@@ -36,9 +42,7 @@ function updateView() {
       </div>
       <button id = "btn1" onclick = "eat()"></button>
       <button id = "btn2" onclick = "guitar()"></button>
-      <button id = "btn3" onclick = "sleep()"></button>
-    </div>  
-    `;
+      <button id = "btn3" onclick = "sleep()"></button>`
 }
 
 // -------------------- CONTROLLER --------------------
@@ -49,7 +53,7 @@ function updateProgressbar1() {
   if (progressbar1 > 0) {
     //setter nedre grense på 0%, den stopper å fjerne 1% ved 0%
     progressbar1--; //fjerner 1%
-    updateView(); //oppdaterer siden
+    updateBars(); //oppdaterer siden
     setTimeout(updateProgressbar1, 1000); //setter refresh på 1,5 sekund
   }
 }
@@ -57,7 +61,7 @@ function updateProgressbar1() {
 function updateProgressbar2() {
   if (progressbar2 > 0) {
     progressbar2--;
-    updateView();
+    updateBars();
     setTimeout(updateProgressbar2, 1500);
   }
 }
@@ -65,7 +69,7 @@ function updateProgressbar2() {
 function updateProgressbar3() {
   if (progressbar3 > 0) {
     progressbar3--;
-    updateView();
+    updateBars();
     setTimeout(updateProgressbar3, 2000);
   }
 }
@@ -80,7 +84,7 @@ function eat() {
     //vis ikke
     progressbar1 = 100; //setter grense/cap på 100%
   }
-  updateView();
+  updateBars();
 }
 
 function guitar() {
@@ -89,7 +93,7 @@ function guitar() {
   } else {
     progressbar2 = 100;
   }
-  updateView();
+  updateBars();
 }
 
 function sleep() {
@@ -98,5 +102,5 @@ function sleep() {
   } else {
     progressbar3 = 100;
   }
-  updateView();
+  updateBars();
 }
