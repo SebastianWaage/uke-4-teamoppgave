@@ -53,6 +53,8 @@ function updateProgressbar1() {
     progressbar1--; //fjerner 1%
     updateBars(); //oppdaterer siden
     setTimeout(updateProgressbar1, 1000); //setter refresh på 1,5 sekund
+  } else {
+    document.getElementById("img1").src = "assets/lossPic.jpg";
   }
 }
 
@@ -61,6 +63,8 @@ function updateProgressbar2() {
     progressbar2--;
     updateBars();
     setTimeout(updateProgressbar2, 1500);
+  } else {
+    document.getElementById("img1").src = "assets/lossPic.jpg";
   }
 }
 
@@ -69,6 +73,8 @@ function updateProgressbar3() {
     progressbar3--;
     updateBars();
     setTimeout(updateProgressbar3, 2000);
+  } else {
+    document.getElementById("img1").src = "assets/lossPic.jpg";
   }
 }
 
