@@ -112,6 +112,12 @@ button {
   grid-template-columns: 320px 75px;
   grid-template-rows: 50px 50px 50px;
   margin-top: 20px;
+  height: 150px;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: outset 2px #c03838;
+  border-radius: 30px;
 }
 
 .progBar{
