@@ -25,7 +25,6 @@ button {
 #img1{
   width: 300px;
   height: 300px;
-  border-radius: 10px;
 }
 
 #dynamiskBenji {
@@ -36,6 +35,7 @@ button {
   border: inset #c03838;
   border-radius: 10px;
   margin: 20px;
+  overflow: hidden;
 }
 
 #progressbar1 {
