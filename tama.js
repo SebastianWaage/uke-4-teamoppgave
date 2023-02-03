@@ -14,14 +14,13 @@ updateProgressbar3();
 function updateView() {
   document.getElementById("app").innerHTML = /*html*/ `
     <div id = "header">Benjigotchi</div>
-    <div id = "dynamiskBenji">bildet av benji</div>
-    <div id = "tracker">
-    </div>  
+    <div id = "dynamiskBenji"><img id="img1" src="assets/alivePic.jpg"></div>
+    <div id = "tracker"></div>  
     `;
 }
 
-function updateBars(){
-  document.getElementById("tracker").innerHTML=`
+function updateBars() {
+  document.getElementById("tracker").innerHTML = `
   <div id = "prg1">
     <div class = "progBar" id="progressbar1" style="width:${
       (progressbar1 / 100) * 300
@@ -42,11 +41,10 @@ function updateBars(){
       </div>
       <button id = "btn1" onclick = "eat()"></button>
       <button id = "btn2" onclick = "guitar()"></button>
-      <button id = "btn3" onclick = "sleep()"></button>`
+      <button id = "btn3" onclick = "sleep()"></button>`;
 }
 
 // -------------------- CONTROLLER --------------------
-
 //animasjon til progressbar1
 function updateProgressbar1() {
   //trekker fra 1 tall per 1,5 sekund fra progressbar1
@@ -84,6 +82,7 @@ function eat() {
     //vis ikke
     progressbar1 = 100; //setter grense/cap på 100%
   }
+  document.getElementById("img1").src = "assets/Burgermannen.jpg";
   updateBars();
 }
 
@@ -93,6 +92,7 @@ function guitar() {
   } else {
     progressbar2 = 100;
   }
+  document.getElementById("img1").src = "assets/guitarbenji.png";
   updateBars();
 }
 
@@ -102,5 +102,6 @@ function sleep() {
   } else {
     progressbar3 = 100;
   }
+  document.getElementById("img1").src = "assets/Sovemannen.jpg";
   updateBars();
 }
